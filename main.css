@@ -1,0 +1,30 @@
+:root {
+    margin-left:30%;
+}
+
+.taipy-text{
+    padding: 20px 10px 20px 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.01);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.taipy-input{
+    background-color: rgba(255,255,255,0.05);
+}
+
+.no_answer{
+    visibility: hidden;
+}
+
+.thinking{
+    animation: think 2s ease-in infinite;
+}
+
+@keyframes think {
+    0% {box-shadow: 0px 0px 0px rgba(255,255,255,0.2)}
+    50% {box-shadow: 0px 0px 10px rgba(255,255,255,0.4)}
+    100% {box-shadow: 0px 0px 0px rgba(255,255,255,0.2)}
+}
