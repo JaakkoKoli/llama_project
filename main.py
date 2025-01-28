@@ -48,10 +48,11 @@ List of available categories in the form of \"main category: list of secondary c
 SYS_PROMPT_CATEGORY = f"""
 Your job is to find the single most suitable primary and secondary product category pair for the customer\'s prompt. 
 This could for example be the user looking for a specific product in which case choose the category that is the most likely to contain it. 
-Only answer with the catagory names seperated by -. For example \"Sports - Cycling\" - the answer should be kept extremely short and simple, 
-no need to answer with anything but the category pair. Do not add any extra information or reasoning to the answer, this is not needed.\n
+Only answer with the catagory names seperated by -. For example \"Sports - Cycling\" - the answer should only contain this pair.  
+Do not add any extra information or reasoning to the answer.\n
 \n
-The categories should all be from the following list of primary and secondary categories in the form of (primary category):(list of secondary categories) \n
+The categories should all be from the following list of primary and secondary categories in the form of (primary category):(list of secondary categories). 
+If none of the secondary categories seem to match, answer only with the main category. \n
 \n
 {category_string}
 """
